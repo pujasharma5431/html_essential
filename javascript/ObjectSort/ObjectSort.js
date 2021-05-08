@@ -1,35 +1,41 @@
-var car = [
-    {
-    name: "Hundai",
-    price: "2000"
-    },
-    {
-    name: "Dustur",
-    price: "1000"
-    },
-    {
-    name: "BMW",
-    price: "5000"
-    }
+var fruit = [{
 
+  name: "Kiwi",
+  price: "50"
+},
+
+{
+  name: "Mango",
+  price: "30"
+
+},
+{
+  name: "Graves",
+  price: "30"
+
+},
+{
+  name: "Graphes",
+  price: "30"
+
+},
+{
+  name: "Watermelon",
+  price: "40"
+
+},
 ]
 
-car.sort();
+function compare(a,b){
 
-// car.sort(function (a, b) {
-//     return a.price - b.price;
-// })
-
-function compare( a, b ) {
-    if ( a.name < b.name ){
-      return -1;
-    }
-    if ( a.name > b.name ){
-      return 1;
-    }
-    return 0;
+  if(a.name<b.name){
+    return -1;
   }
-  
-  car.sort( compare );
+  if(a.name>b.name){
+    return 1;
+  }
+  return 0;
+}
 
-console.log(car);
+console.log(
+  fruit.sort(compare));
