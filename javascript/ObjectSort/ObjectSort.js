@@ -3,21 +3,17 @@ var fruit = [{
   name: "Kiwi",
   price: "50"
 },
-
 {
   name: "Mango",
   price: "30"
-
 },
 {
   name: "Graves",
   price: "30"
-
 },
 {
   name: "Graphes",
   price: "30"
-
 },
 {
   name: "Watermelon",
